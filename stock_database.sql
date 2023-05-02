@@ -16,6 +16,6 @@ date_derniere_entree DATE ,
 date_derniere_sortie DATE,
 image_produit BLOB
 );
-INSERT INTO utilisateur(nom, password) VALUES ("maria", "hellohello12");
+INSERT INTO utilisateur(nom, password) VALUES ("maria", "hellohellutilisateuro12");
 INSERT INTO utilisateur(nom, password) VALUES ("neha", "2003neha");
 SELECT * FROM utilisateur;

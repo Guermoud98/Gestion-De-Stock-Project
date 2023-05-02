@@ -1,13 +1,13 @@
 import mysql.connector
 
 class connexion:
-   def __init__(self, host, user, database, password):
+   def __init__(self):
        try:
            self.conn = mysql.connector.connect(
-               host = host,
-               user = user,
-               database = database,
-               password = password
+               host = "localhost",
+               user = "root",
+               database = "stock",
+               password = "maria1998"
            )
            print("la connexion avec la base de donnée est réussie")
    
@@ -17,5 +17,5 @@ class connexion:
    
    
    
-   
+#cnx = connexion(host="localhost", user="root", database="stock", password="maria1998")
   
