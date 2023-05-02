@@ -46,11 +46,11 @@ class adminDAO:
 #admin = admin("m", "gg")
 #a = adminDAO()
 #a.ajouterAdmin(admin)
-#u.afficherAdmins()
+#a.afficherAdmins()
 #modifier
 #a.modifierAdmin(2,"lol")
 #a.afficherAdmins()
 #supprimer admin
-a = adminDAO()
-a.supprimerAdmin(25)
-a.afficherAdmins()
+#a = adminDAO()
+#a.supprimerAdmin(25)
+#a.afficherAdmins()
