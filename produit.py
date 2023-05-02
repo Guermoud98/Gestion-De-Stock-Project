@@ -2,7 +2,7 @@ class produit:
     id = 0
     # constructeur
 
-    def __init__(self, nom, prix, qte_stock, seuil_alerte, date_premiere_entree, date_derniere_sortie, image_produit):
+    def __init__(self, nom, prix, qte_stock, seuil_alerte, date_premiere_entree, date_derniere_sortie, image_produit, admin_id):
         produit.id += 1
         self.id = produit.id
         self.nom = nom
@@ -12,3 +12,4 @@ class produit:
         self.date_premiere_entree = date_premiere_entree
         self.date_derniere_sortie = date_derniere_sortie
         self.image_produit = image_produit
+        self.admin_id = admin_id

@@ -1,7 +1,7 @@
+-- Active: 1683026829664@@127.0.0.1@3306@stock
 CREATE DATABASE stock;
-SHOW DATABASES;
 USE stock;
-CREATE TABLE utilisateur(
+CREATE TABLE admin(
 id INT PRIMARY KEY AUTO_INCREMENT, 
 nom VARCHAR(20), 
 password VARCHAR(20)
@@ -16,6 +16,7 @@ date_derniere_entree DATE ,
 date_derniere_sortie DATE,
 image_produit BLOB
 );
-INSERT INTO utilisateur(nom, password) VALUES ("maria", "hellohellutilisateuro12");
-INSERT INTO utilisateur(nom, password) VALUES ("neha", "2003neha");
-SELECT * FROM utilisateur;
+ALTER TABLE produit
+ADD CONSTRAINT fk_admin
+FOREIGN KEY (id)
+REFERENCES admin(id);
