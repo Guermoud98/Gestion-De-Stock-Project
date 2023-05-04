@@ -1,6 +1,21 @@
 from tkinter import *
 from PIL import ImageTk as img
+from tkinter import messagebox
+from connexion import connexion
+from adminDAO import adminDAO
+from admin import admin
 
+
+def connect_db():
+    if username_input.get()=='' or password_input.get()=='' or pwd_confirm_input=='':
+        messagebox.showerror('Error','All Fields Are Required')
+    elif password_input.get() != pwd_confirm_input.get():
+        messagebox.showerror('Error','Password Mismatch')
+    else:
+        cnx = connexion()
+        a = admin(username_input.get(),password_input.get())
+        insert_admin = adminDAO()
+        insert_admin.ajouterAdmin(a)
 
 def login_page():
     signup_window.destroy()
@@ -43,7 +58,7 @@ pwd_confirm_input = Entry(frame,width=30,font= ("Microsoft Yahei UI Light",10,"b
 pwd_confirm_input.grid(row=6,column=0,pady=10)
 
 # signup button
-signup_btn = Button(frame,text="Signup",font= ("Open Sans",16,"bold"))
+signup_btn = Button(frame,text="Signup",font= ("Open Sans",16,"bold"),command = connect_db)
 signup_btn.grid(row=7,column=0)
 
 #alreadyAccount
@@ -53,16 +68,6 @@ alreadyaccount.grid(row=8,column=0,sticky="w")
 #loginButton
 login_btn = Button(frame,text="Log in",font= ("Open Sans",9,"bold underline"), bg="white",fg="blue",cursor="hand2",activeforeground="blue", command = login_page)
 login_btn.place(x=180,y=290)
-
-
-
-
-
-
-
-
-
-
 
 
 signup_window.mainloop()
