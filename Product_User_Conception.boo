@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{FE859F19-7C94-4697-9EB6-5AC2F9C546FF}" Label="" LastModificationDate="1683028949" Name="ModeleOrienteObjet_1" Objects="76" Symbols="10" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{FE859F19-7C94-4697-9EB6-5AC2F9C546FF}" Label="" LastModificationDate="1682902249" Name="ModeleOrienteObjet_1" Objects="76" Symbols="10" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1397,8 +1397,8 @@ Shadow=0</a:DisplayPreferences>
 <o:AssociationSymbol Id="o6">
 <a:CreationDate>1682863845</a:CreationDate>
 <a:ModificationDate>1682882111</a:ModificationDate>
-<a:Rect>((-11042,16183), (22088,19719))</a:Rect>
-<a:ListOfPoints>((-11042,18545),(-4953,18545),(-4953,17357),(22088,17357))</a:ListOfPoints>
+<a:Rect>((-10490,16183), (22088,19719))</a:Rect>
+<a:ListOfPoints>((-10490,18545),(-4953,18545),(-4953,17357),(22088,17357))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -1418,8 +1418,8 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o10">
 <a:CreationDate>1682879731</a:CreationDate>
 <a:ModificationDate>1682880951</a:ModificationDate>
-<a:Rect>((-20036,317), (-17445,15963))</a:Rect>
-<a:ListOfPoints>((-19499,15963),(-19347,3647),(-18159,3647),(-18166,317))</a:ListOfPoints>
+<a:Rect>((-19996,317), (-17360,15963))</a:Rect>
+<a:ListOfPoints>((-19347,15963),(-19347,3647),(-18159,3647),(-18159,317))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -1439,8 +1439,8 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o13">
 <a:CreationDate>1682879736</a:CreationDate>
 <a:ModificationDate>1682879736</a:ModificationDate>
-<a:Rect>((-20719,-14294), (-16829,-5556))</a:Rect>
-<a:ListOfPoints>((-18641,-5556),(-19167,-14294))</a:ListOfPoints>
+<a:Rect>((-20689,-14294), (-16864,-5556))</a:Rect>
+<a:ListOfPoints>((-18646,-5556),(-19167,-14294))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -1503,7 +1503,7 @@ MULA 0 Arial,8,N</a:FontList>
 <a:CreationDate>1682861660</a:CreationDate>
 <a:ModificationDate>1682880951</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-35790,14724), (-9656,21464))</a:Rect>
+<a:Rect>((-36408,14724), (-9038,21464))</a:Rect>
 <a:LineColor>128</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1574,7 +1574,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1682877872</a:CreationDate>
 <a:ModificationDate>1682878162</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-26573,-5864), (-10327,1852))</a:Rect>
+<a:Rect>((-26766,-5864), (-10134,1852))</a:Rect>
 <a:LineColor>128</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1625,11 +1625,11 @@ LABL 0 Arial,8,N</a:FontList>
 <c:Classes>
 <o:Class Id="o21">
 <a:ObjectID>C5EECD2F-CC6A-49B8-9110-C2FD55E16D49</a:ObjectID>
-<a:Name>admin</a:Name>
-<a:Code>Admin</a:Code>
+<a:Name>utilisateur</a:Name>
+<a:Code>Utilisateur</a:Code>
 <a:CreationDate>1682861660</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028873</a:ModificationDate>
+<a:ModificationDate>1682895652</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
@@ -1671,11 +1671,11 @@ LABL 0 Arial,8,N</a:FontList>
 <c:Operations>
 <o:Operation Id="o29">
 <a:ObjectID>C4C2AC93-2590-41BA-8889-DAD471A3AF18</a:ObjectID>
-<a:Name>Admin</a:Name>
-<a:Code>Admin</a:Code>
+<a:Name>Utilisateur</a:Name>
+<a:Code>Utilisateur</a:Code>
 <a:CreationDate>1682863287</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028873</a:ModificationDate>
+<a:ModificationDate>1682894927</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:Stereotype>Constructor</a:Stereotype>
 <a:Automatic>1</a:Automatic>
@@ -1963,11 +1963,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 <o:Attribute Id="o51">
 <a:ObjectID>C98C06CE-9F93-4588-ACCA-4CC76B4D14B1</a:ObjectID>
-<a:Name>nom_admin</a:Name>
-<a:Code>nomAdmin</a:Code>
+<a:Name>nom_utilisateur</a:Name>
+<a:Code>nomUtilisateur</a:Code>
 <a:CreationDate>1682864547</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028949</a:ModificationDate>
+<a:ModificationDate>1682864936</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
@@ -2135,11 +2135,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Class>
 <o:Class Id="o24">
 <a:ObjectID>473CC335-06D8-4E34-AA46-2992898734FC</a:ObjectID>
-<a:Name>adminDAO</a:Name>
-<a:Code>AdminDAO</a:Code>
+<a:Name>utilisateurDAO</a:Name>
+<a:Code>UtilisateurDAO</a:Code>
 <a:CreationDate>1682877872</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028885</a:ModificationDate>
+<a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Operations>
@@ -2159,11 +2159,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 <o:Operation Id="o66">
 <a:ObjectID>1ACC0136-454E-4DCF-AF88-651A6147E2E0</a:ObjectID>
-<a:Name>ajouterAdmin</a:Name>
-<a:Code>ajouterAdmin</a:Code>
+<a:Name>ajouterUser</a:Name>
+<a:Code>ajouterUser</a:Code>
 <a:CreationDate>1682880455</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028916</a:ModificationDate>
+<a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
@@ -2177,7 +2177,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:WSDLDataType>Utilisateur</a:WSDLDataType>
-<a:Parameter.DataType>Admin</a:Parameter.DataType>
+<a:Parameter.DataType>Utilisateur</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 <c:ObjectDataType>
 <o:Class Ref="o21"/>
@@ -2187,11 +2187,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 <o:Operation Id="o68">
 <a:ObjectID>E3E6348D-E05F-4CD0-A36D-03DB851A1EF6</a:ObjectID>
-<a:Name>modifierAdmin</a:Name>
-<a:Code>modifierAdmin</a:Code>
+<a:Name>modifierUser</a:Name>
+<a:Code>modifierUser</a:Code>
 <a:CreationDate>1682880455</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028916</a:ModificationDate>
+<a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
@@ -2205,7 +2205,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:WSDLDataType>Utilisateur</a:WSDLDataType>
-<a:Parameter.DataType>Admin</a:Parameter.DataType>
+<a:Parameter.DataType>Utilisateur</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 <c:ObjectDataType>
 <o:Class Ref="o21"/>
@@ -2215,11 +2215,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 <o:Operation Id="o70">
 <a:ObjectID>02566399-56FF-4F4D-9708-2F586F60D44E</a:ObjectID>
-<a:Name>afficherAdmin</a:Name>
-<a:Code>afficherAdmin</a:Code>
+<a:Name>afficherUser</a:Name>
+<a:Code>afficherUser</a:Code>
 <a:CreationDate>1682880455</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028916</a:ModificationDate>
+<a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
@@ -2233,7 +2233,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:WSDLDataType>Utilisateur</a:WSDLDataType>
-<a:Parameter.DataType>Admin</a:Parameter.DataType>
+<a:Parameter.DataType>Utilisateur</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 <c:ObjectDataType>
 <o:Class Ref="o21"/>
@@ -2243,11 +2243,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Operation>
 <o:Operation Id="o72">
 <a:ObjectID>2EBA85CC-07E3-4040-B31F-7E8B04A1FA83</a:ObjectID>
-<a:Name>supprimerAdmin</a:Name>
-<a:Code>supprimerAdmin</a:Code>
+<a:Name>supprimerUser</a:Name>
+<a:Code>supprimerUser</a:Code>
 <a:CreationDate>1682880455</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1683028916</a:ModificationDate>
+<a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
@@ -2261,7 +2261,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1682880473</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:WSDLDataType>Utilisateur</a:WSDLDataType>
-<a:Parameter.DataType>Admin</a:Parameter.DataType>
+<a:Parameter.DataType>Utilisateur</a:Parameter.DataType>
 <a:ParameterType>I</a:ParameterType>
 <c:ObjectDataType>
 <o:Class Ref="o21"/>

@@ -52,5 +52,4 @@ class adminDAO:
 #a.afficherAdmins()
 #supprimer admin
 #a = adminDAO()
-#a.supprimerAdmin(25)
 #a.afficherAdmins()
