@@ -26,6 +26,20 @@ class adminDAO:
         except Exception as e:
             print(f"An error occurred: {e}")
 
+    def afficherSpecificAdmin(self, username, password):
+        try:
+            query = "SELECT * FROM admin WHERE nom= %s AND password=%s"
+            values = (username, password)
+            self.cursor.execute(query, values)
+            result = self.cursor.fetchall()
+            if len(result) > 0:
+             return True
+            else:
+              return False
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return False  
+
     def modifierAdmin(self,id, password):
         try:
             query = "UPDATE  admin SET password = %s WHERE id = %s"
@@ -34,6 +48,7 @@ class adminDAO:
             self.cnx.conn.commit()
         except Exception as e:
             print(f"An error occurred: {e}")
+
     def supprimerAdmin(self,id):
         try:
             query = "DELETE FROM admin WHERE id = %s"
@@ -43,9 +58,9 @@ class adminDAO:
         except Exception as e:
             print(f"An error occurred: {e}")
 #ajouter
-#admin = admin("m", "gg")
-#a = adminDAO()
-#a.ajouterAdmin(admin)
+admin = admin("qqlx", "gqg")
+a = adminDAO()
+a.ajouterAdmin(admin)
 #a.afficherAdmins()
 #modifier
 #a.modifierAdmin(2,"lol")
@@ -53,3 +68,7 @@ class adminDAO:
 #supprimer admin
 #a = adminDAO()
 #a.afficherAdmins()
+if(a.afficherSpecificAdmin("d",12233) == True):
+    print("existe")
+else:
+    print("doesnt")
