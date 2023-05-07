@@ -19,7 +19,7 @@ def connect_db():
 
 def login_page():
     signup_window.destroy()
-    import login
+    import login_interface
 
 signup_window = Tk()
 

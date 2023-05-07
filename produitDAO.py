@@ -41,5 +41,5 @@ class produitDAO:
         except Exception as e:
             print(f"An error occurred: {e}")
 
-p=produitDAO()
-p.rechercherProduit("mimi",12.9,12,13)
+#p=produitDAO()
+#p.rechercherProduit("mimi",12.9,12,13)

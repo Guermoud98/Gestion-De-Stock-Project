@@ -11,6 +11,8 @@ def connect_db():
 
     elif check_login(username_input.get(),password_input.get()):
         messagebox.showinfo('Success', 'Database connection successful!')
+        login_window.destroy()
+        import navbar
         
     else:
         messagebox.showerror('Error','Invalid username or password')
@@ -23,7 +25,7 @@ def check_login(username,password):
     
 def signup_page():
     login_window.destroy()
-    import signup
+    import signup_interface
 
 # creating an instance of the Tk class from the tkinter module
 login_window = Tk()
@@ -73,5 +75,3 @@ signup_btn.place(x=150,y=210)
 login_window.mainloop()
 
 
-
-#u = login()
