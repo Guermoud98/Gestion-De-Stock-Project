@@ -10,9 +10,12 @@ def connect_db():
         messagebox.showerror('Error','All Fields Are Required')
 
     elif check_login(username_input.get(),password_input.get()):
+        global logged_in_admin
+        logged_in_admin = username_input.get()
         messagebox.showinfo('Success', 'Database connection successful!')
         login_window.destroy()
-        import navbar
+        import produits_interface
+        #import navbar
         
     else:
         messagebox.showerror('Error','Invalid username or password')

@@ -26,5 +26,10 @@ CREATE TABLE
 ALTER TABLE produit
 ADD
     CONSTRAINT fk_admin FOREIGN KEY (id) REFERENCES admin(id);
+ALTER TABLE produit ADD COLUMN nom_admin VARCHAR(30);
 
-ALTER TABLE admin ADD CONSTRAINT unique_admin UNIQUE (nom) 
+ALTER TABLE produit
+DROP image_produit ;
+
+
+
