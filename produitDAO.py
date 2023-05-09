@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from produit import produit
 from connexion import connexion
 from admin import admin
@@ -24,7 +25,6 @@ class produitDAO:
                       produit.date_premiere_entree, produit.date_derniere_sortie, image_data, user.id_admin)
             self.cursor.execute(query, values)"""
               
-        
     def afficherProduits(self):
         try:
             query = "SELECT * FROM produit"
@@ -34,27 +34,29 @@ class produitDAO:
         except Exception as e:
             print(f"An error occurred: {e}")
             return 0
-    
-    def rechercherProduit(self, nom, prix, qte_stock, date_derniere_sortie):
+    # rechercher par nom
+    def rechercherProduit(self, nom):
         try:
-            query ="SELECT * FROM produit WHERE (nom=%s AND prix=%s AND qte_stock=%s AND date_derniere_sortie=%s) "
-            values=(nom, prix, qte_stock, date_derniere_sortie)
+            query ="SELECT * FROM produit WHERE nom=%s  "
+            values=(nom,)
             self.cursor.execute(query, values)
             result = self.cursor.fetchall()
-            for row in result:
-                print(row)
+            return result
         except Exception as e:
             print(f"An error occurred: {e}")
-
-    def supprimerProduit(self, produit):
+            return NULL
+    def supprimerProduit(self, nom_produit):
         try:
-            query = "DELETE FROM produit WHERE id_produit = %s"
-            values = (produit,)
+            query = "DELETE FROM produit WHERE nom = %s"
+            values = (nom_produit,)
             self.cursor.execute(query, values)
             self.connexion.commit()
             print("Product deleted successfully.")
+            return True
+                
+           
         except Exception as e:
             print(f"An error occurred: {e}")
-
+            return False
 #p=produitDAO()
 #p.rechercherProduit("mimi",12.9,12,13)
